@@ -1,7 +1,7 @@
 Server-side script
 ==================
 
-This section describes how to run, write and manage the OMERO server side scripts.
+This section describes how to run, write and manage the OMERO server-side scripts.
 
 Contents:
 
