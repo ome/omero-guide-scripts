@@ -1,10 +1,10 @@
-**Run server-side scripts**
-===========================
+Run server-side scripts
+=======================
 
 The server-side Python scripts on OMERO give an opportunity to run the analysis close to the data.
 
-**Description**
----------------
+Description
+-----------
 
 The server-side Python scripts on OMERO can be accessed via both the OMERO.web and OMERO.insight user interfaces. The scripts are typically uploaded by an administrator or a restricted administrator of the OMERO.server and can be run by any user on the server.
 
@@ -12,29 +12,29 @@ First, two examples are presented showing the experience from the user interface
 
 Second, the process of writing, uploading and editing of OMERO script is explored
 
-**Setup**
----------
+Setup
+-----
 
 No specific setup needed.
 
-**Resources**
--------------
+Resources
+---------
 
--  Images for the Batch ROI Export.py script see \ https://downloads.openmicroscopy.org/images/DV/siRNAi-HeLa/
+-  Images for the Batch ROI Export.py script see \ https://downloads.openmicroscopy.org/images/DV/siRNAi-HeLa/.
 
 -  Images for Kymograph script were downloaded from \ http://jcb.rupress.org/content/194/2/187\ .(Bowen et. al. Journal of Cell Biology 194 (2): 187).
 
--  The simple example script is available on \ https://raw.githubusercontent.com/ome/training-scripts/master/practical/python/server/hello_world.py
+-  The simple example script is available on \ https://raw.githubusercontent.com/ome/omero-guide-python/master/scripts/hello_world_server.py.
 
-**Step-by-Step**
-----------------
+Step-by-Step
+------------
 
 Example:
 ~~~~~~~~
 
 #.  We will now analyse the ROIs created in OMERO.iviewer using a server-side script.
 
-#.  Go to the siRNA-HeLa Dataset and open several images whose name start with VRAQ… in OMERO.iviewer.
+#.  Go to the siRNA-HeLa Dataset and open several images whose name start with VRAQ... in OMERO.iviewer.
 
 #.  We want to measure the distance between Centromeres, stained with ACA in the 4th Channel. Turn on ONLY the 4th channel and open the ROIs tab to on the right-hand pane.
 
@@ -52,7 +52,7 @@ Example:
 
 #.  Click the Script button in the top-right of the page \ |image2a|\ .
 
-#.  Select export_scripts > Batch_ROI_Export…
+#.  Select `export_scripts > Batch_ROI_Export...`
 
 #. In the dialog that pops up, click on View Script to view the Python code.
 
