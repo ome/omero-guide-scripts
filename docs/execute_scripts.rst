@@ -20,11 +20,11 @@ No specific setup needed.
 Resources
 ---------
 
--  Images for the Batch ROI Export.py script see \ https://downloads.openmicroscopy.org/images/DV/siRNAi-HeLa/.
+-  `siRNAi-HeLa images <https://downloads.openmicroscopy.org/images/DV/siRNAi-HeLa/>`__ for the Batch ROI Export.py script.
 
 -  Images for Kymograph script were downloaded from \ http://jcb.rupress.org/content/194/2/187\ .(Bowen et. al. Journal of Cell Biology 194 (2): 187).
 
--  The simple example script is available on \ https://raw.githubusercontent.com/ome/omero-guide-python/master/scripts/hello_world_server.py.
+-  The simple example script is available on `hello_world_server.py <https://raw.githubusercontent.com/ome/omero-guide-python/master/scripts/hello_world_server.py>`__.
 
 Step-by-Step
 ------------
