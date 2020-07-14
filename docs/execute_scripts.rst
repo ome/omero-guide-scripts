@@ -8,7 +8,7 @@ Description
 
 The server-side Python scripts on OMERO can be accessed via both the OMERO.web and OMERO.insight user interfaces. The scripts are typically uploaded by an administrator or a restricted administrator of the OMERO.server and can be run by any user on the server.
 
-First we show an example of a server-side script with a customized UI.
+First, we show an example of a server-side script with a customized UI.
 
 Secondly, two examples are presented showing the experience from the user interface of OMERO.web (Batch ROI export and Kymograph).
 
@@ -23,8 +23,6 @@ Resources
 -  `siRNAi-HeLa images <https://downloads.openmicroscopy.org/images/DV/siRNAi-HeLa/>`__ for the Batch ROI Export.py script.
 
 -  Images for Kymograph script were downloaded from \ http://jcb.rupress.org/content/194/2/187\ .(Bowen et. al. Journal of Cell Biology 194 (2): 187).
-
--  The simple example script is available on `hello_world_server.py <https://raw.githubusercontent.com/ome/omero-guide-python/master/scripts/hello_world_server.py>`__.
 
 Step-by-Step
 ------------
