@@ -1,40 +1,62 @@
-**Run server-side scripts**
-===========================
+Run server-side scripts
+=======================
 
 The server-side Python scripts on OMERO give an opportunity to run the analysis close to the data.
 
-**Description**
----------------
+Description
+-----------
 
 The server-side Python scripts on OMERO can be accessed via both the OMERO.web and OMERO.insight user interfaces. The scripts are typically uploaded by an administrator or a restricted administrator of the OMERO.server and can be run by any user on the server.
 
-First, two examples are presented showing the experience from the user interface of OMERO.web (Batch ROI export and Kymograph).
+First, we show an example of a server-side script with a customized UI.
 
-Second, the process of writing, uploading and editing of OMERO script is explored
+Secondly, two examples are presented showing the experience from the user interface of OMERO.web (Batch ROI export and Kymograph).
 
-**Setup**
----------
+Setup
+-----
 
 No specific setup needed.
 
-**Resources**
--------------
+Resources
+---------
 
--  Images for the Batch ROI Export.py script see \ https://downloads.openmicroscopy.org/images/DV/siRNAi-HeLa/
+-  `siRNAi-HeLa images <https://downloads.openmicroscopy.org/images/DV/siRNAi-HeLa/>`__ for the Batch ROI Export.py script.
 
 -  Images for Kymograph script were downloaded from \ http://jcb.rupress.org/content/194/2/187\ .(Bowen et. al. Journal of Cell Biology 194 (2): 187).
 
--  The simple example script is available on \ https://raw.githubusercontent.com/ome/training-scripts/master/practical/python/server/hello_world.py
+Step-by-Step
+------------
 
-**Step-by-Step**
-----------------
+Example 1
+~~~~~~~~~
 
-Example:
-~~~~~~~~
+In this example, we create a movie server-side using the script `Make_Movie.py <https://github.com/ome/omero-scripts/blob/develop/omero/export_scripts/Make_Movie.py>`__.
+For this script, there is a customized UI for the script that will override the default UI available from the script itself.
+
+#. Select a time-lapse Image in the OMERO.web client and click on the ``Publish`` icon in the toolbar.
+
+    .. image:: images/scripts9.png
+
+#. Select ``Make Movie...`` from the drop-down menu to create a movie from an Image.
+
+#. Select the format from the ``Format`` drop-down.
+
+#. Use the ``Frame Rate`` drop-down to select the frame rate.
+
+#. Set the desired time interval if appropriate.
+
+#. Set the desired Z-section interval if appropriate.
+
+#. Click the button ``Make Movie`` to start the movie creation server side.
+
+    .. image:: images/scripts10.png
+
+Example 2
+~~~~~~~~~
 
 #.  We will now analyse the ROIs created in OMERO.iviewer using a server-side script.
 
-#.  Go to the siRNA-HeLa Dataset and open several images whose name start with VRAQ… in OMERO.iviewer.
+#.  Go to the siRNA-HeLa Dataset and open several images whose name start with VRAQ... in OMERO.iviewer.
 
 #.  We want to measure the distance between Centromeres, stained with ACA in the 4th Channel. Turn on ONLY the 4th channel and open the ROIs tab to on the right-hand pane.
 
@@ -52,7 +74,7 @@ Example:
 
 #.  Click the Script button in the top-right of the page \ |image2a|\ .
 
-#.  Select export_scripts > Batch_ROI_Export…
+#.  Select `export_scripts > Batch_ROI_Export...`
 
 #. In the dialog that pops up, click on View Script to view the Python code.
 
@@ -70,8 +92,8 @@ Example:
 
 #. When the script has completed, it will show in the Activities dialog and allow you to download the CSV file. Download this and open it, e.g. in Excel, to see the output data for all the shapes.
 
-Example:
-~~~~~~~~
+Example 3
+~~~~~~~~~
 
 We will now use another server-side script for creating a Kymograph from an Image in OMERO. The Image we will use for the Kymograph demonstration has been published in a study investigating protein migration along microtubules \ http://jcb.rupress.org/content/194/2/187\ .(Bowen et. al.
 Journal of Cell Biology 194 (2): 187).
@@ -127,4 +149,3 @@ Journal of Cell Biology 194 (2): 187).
 .. |image4a| image:: images/scripts4.png
    :width: 0.25391in
    :height: 0.20833in
-

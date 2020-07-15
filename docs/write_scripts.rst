@@ -1,11 +1,11 @@
-**How to write a server-side script**
-=====================================
+How to write a server-side script
+=================================
 
 The server side script follows some simple steps so that a simple UI can be generated automatically.
 
 In this section we will show how to write a simple script and upload it to the OMERO.server: The user will specify a Dataset and the script will be uploaded by the OMERO.server administrator (or administrator with restricted privileges) to the OMERO.server. If the script is uploaded as "official", it can be run by all users on the OMERO.server after upload. The script demonstrated here is very simple, it just loads the images contained in a dataset.
 
-See \ https://raw.githubusercontent.com/ome/training-scripts/master/practical/python/server/hello_world.py
+See \ https://raw.githubusercontent.com/ome/omero-guide-python/master/scripts/hello_world_server.py.
 
 #. Click on the link above and copy and paste the script into a text editor of your choice.
 
