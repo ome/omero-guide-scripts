@@ -22,7 +22,7 @@ Resources
 
 -  `siRNAi-HeLa images <https://downloads.openmicroscopy.org/images/DV/siRNAi-HeLa/>`__ for the Batch ROI Export.py script.
 
--  Images for Kymograph script were downloaded from \ http://jcb.rupress.org/content/194/2/187\ .(Bowen et. al. Journal of Cell Biology 194 (2): 187).
+-  Images for Kymograph script were downloaded from `Septin GTPases spatially guide microtubule organization and plus end dynamics in polarizing epithelia <http://jcb.rupress.org/content/194/2/187>`__ (Bowen et. al. Journal of Cell Biology 194 (2): 187).
 
 Step-by-Step
 ------------
@@ -95,8 +95,7 @@ Example 2
 Example 3
 ~~~~~~~~~
 
-We will now use another server-side script for creating a Kymograph from an Image in OMERO. The Image we will use for the Kymograph demonstration has been published in a study investigating protein migration along microtubules \ http://jcb.rupress.org/content/194/2/187\ .(Bowen et. al.
-Journal of Cell Biology 194 (2): 187).
+We will now use another server-side script for creating a Kymograph from an Image in OMERO.
 
 #. Go to the Dataset Kymograph.
 

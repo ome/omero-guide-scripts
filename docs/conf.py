@@ -334,3 +334,5 @@ epub_exclude_files = ['search.html']
 
 # If false, no index is generated.
 #epub_use_index = True
+
+linkcheck_ignore = ['http://jcb.rupress.org/content/194/2/187']
