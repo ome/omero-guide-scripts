@@ -2,6 +2,8 @@
 
 [![Documentation Status](https://readthedocs.org/projects/omero-guide-scripts/badge/?version=latest)](https://omero-guides.readthedocs.io/en/latest/scripts/docs/index.html)
 
+[![Actions Status](https://github.com/ome/omero-guide-scripts/workflows/sphinx/badge.svg)](https://github.com/ome/omero-guide-scripts/actions)
+
 The documentation is deployed at [How to use server-side scripts](https://omero-guides.readthedocs.io/en/latest/scripts/docs/index.html)
 
 # This is a template useful to create guides
