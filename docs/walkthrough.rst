@@ -33,7 +33,7 @@ The first is to simply select the all the desired objects. Opening the script \
 after selecting the object will prefill the script parameters with the right \
 object type and IDs:
 
-.. figure:: images/annotation_1_selecting_all_autofill.png
+.. figure:: images/annotation_01_selecting_all_autofill.png
 
    *Selection of multiple datasets and the auto-filled Export to CSV script.*
 ..
@@ -47,7 +47,7 @@ Instead of selecting the objects one by one, we can select the parent object \
 and set the "*Target Data Type*" to the type of the children objects \
 we want to select.
 
-.. figure:: images/annotation_2_selecting_parentchild_autofill.png
+.. figure:: images/annotation_02_selecting_parentchild_autofill.png
 
    *Selection of all the images of a project and the auto-filled Export to CSV script.*
 ..
@@ -62,7 +62,7 @@ flexibility, either to select objects attached to different projects \
 or different owners, or to have a finer control over \
 which objects to process.
 
-.. figure:: images/annotation_3_selecting_tags.png
+.. figure:: images/annotation_03_selecting_tags.png
 
    *Selection of a subset of datasets from a tag and the auto-filled Export to CSV script.*
 ..
@@ -89,7 +89,7 @@ expected by the import .csv script. This has two use:
   across groups.
 * export a list of objects with their name and ID.
 
-.. figure:: images/annotation_4_export_output.png
+.. figure:: images/annotation_04_export_output.png
 
    *Exported .csv with only the object ID and name*
 ..
@@ -106,7 +106,7 @@ Starting from the file we exported as explained in the previous section, \
 we proceed to edit it within a spreadsheet editor, adding more columns to the csv, \
 including a row specifying the namespace to assign for each key:
 
-.. figure:: images/annotation_5_KV_to_import.png
+.. figure:: images/annotation_05_KV_to_import.png
 
    *Result of populating the csv shown in a text editor*
 ..
@@ -117,7 +117,7 @@ following the `REMBI <https://doi.org/10.1038/s41592-021-01166-8>`_ guidelines \
 
 We proceed and start the script "*Import from CSV*".
 
-.. figure:: images/annotation_6_script_import.png
+.. figure:: images/annotation_06_script_import.png
 
    *Selection of all the datasets of a project and the Import from CSV script.*
 ..
@@ -130,7 +130,7 @@ We can then see in the OMERO activities that the Key-Value pairs were added to 5
 datasets out of the 11 present in this project (as expected). We also see three set of \
 key-value pairs, one for each namespace we used in the csv.
 
-.. figure:: images/annotation_7_KV_import_printout.png
+.. figure:: images/annotation_07_KV_import_printout.png
 
   *The script output (5 entries in the csv matched to 5 dataset out of 11) and the\
   resulting key-value pairs annotation.*
@@ -153,14 +153,14 @@ We would like to do a few changes in OMERO.web, and for that we would need to \
 change the namespace to the default OMERO.web namespace. We indicate the namespace we \
 want to edit and leave the second field empty (default namespace is then used).
 
-.. figure:: images/annotation_8_convert_namespace.png
+.. figure:: images/annotation_08_convert_namespace.png
 
   *The script to convert the namespace of key-value pairs annotations.*
 ..
 
 And here is our five Key-Value pairs annotations with converted namespace:
 
-.. figure:: images/annotation_9_converted_KV.png
+.. figure:: images/annotation_09_converted_KV.png
 
   *The script output (5 dataset had annotations with the default namespace) and the\
   resulting key-value pairs annotation.*
