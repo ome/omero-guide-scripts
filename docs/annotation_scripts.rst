@@ -1,7 +1,9 @@
 Batch annotation scripts
 ========================
 
-This section desc
+This section describes how to use the annotation scripts, which \
+provide additional support for key-value pairs (and tags) to \
+import, export, delete or convert between namespaces by batch.
 
 .. toctree::
    :maxdepth: 1
