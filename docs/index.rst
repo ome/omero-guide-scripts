@@ -1,5 +1,5 @@
-Server-side script
-==================
+Server-side scripts
+===================
 
 This section describes how to run, write and manage the OMERO server-side scripts.
 Server-side scripts can be written in different programming languages but you will
