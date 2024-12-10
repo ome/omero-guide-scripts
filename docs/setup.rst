@@ -2,19 +2,19 @@
 Setup
 =====
 
-Setting up scripts for OMERO.web has to be done by an administrator of your \
+Setting up server-side scripts for OMERO has to be done by an administrator of your \
 server. Please contact them if the scripts are not present or in a different \
 version as the one presented in this guide, and redirect them to this page.
 
-The scripts menu is located in the top-right part of the OMERO.web client, \
-on the left of the search bar. Please refer to the `script documentation \
+In the OMERO.web client, the scripts menu is located above the central pane \
+to the left of the search bar. Please refer to the `script documentation \
 <https://omero.readthedocs.io/en/stable/developers/scripts/index.html>`_ \
 for more information.
 
 Installing the scripts
 ----------------------
 The Key-value pairs scripts have been updated in 2023 to enable \
-them to annotate all the common object type in OMERO.web:
+them to annotate all the common object types in OMERO:
 
 * Image
 * Dataset
@@ -33,7 +33,7 @@ instructions to install them.
 
 Configuring the Export script
 -----------------------------
-Note that the Export script can be fine tuned to your specific OMERO.web \
+Note that the Export script can be fine-tuned to your specific OMERO.web \
 installation. For that, open the script and find the global parameter named \
 "WEBCLIENT_URL", and set it to the URL of your webclient, without forgetting \
 to add the http/https protocol in front:
@@ -45,7 +45,7 @@ downloading. If not configured, the .csv can be found as an attachment of the \
 first parent object passed in parameter of the export script (the file is \
 attached regardless of whether the URL is set or not).
 
-This can be done with the `OMERO CLI <https://omero.readthedocs.io/en/stable/users/cli/index.html>`_:
+To set this configuration, you can use `OMERO CLI <https://omero.readthedocs.io/en/stable/users/cli/index.html>`_:
 
 .. code-block:: bash
 

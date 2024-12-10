@@ -10,8 +10,8 @@ Key-Value pairs (MapAnnotations) and Tags (TagAnnotations) by batch:
 * Delete Key-Value pairs
 * Convert the namespaces of Key-Value pairs
 
-Following this walkthrough, we hope to give you an understanding of \
-the four scripts that will help you to manipulate your annotations.
+This walkthrough should give you an understanding of \
+the scripts and help you to manage your annotations.
 
 Object selection with the scripts
 ---------------------------------
@@ -22,14 +22,14 @@ two distinct hierarchies:
 * **Projects** → **Datasets** → **Images**
 * **Screens** → **Plates** → (**Wells** or **Acquisition/Run**) → **Images**
 
-More details about selecting High-Content-Screening are given in another \
-section (see :doc:`Selecting High-Content-Screening </extended_description>`).
+More details about selecting High-Content-Screening are given \
+elsewhere (see :doc:`Selecting High-Content-Screening </extended_description>`).
 
-To select which objects to manipulate by batch, the scripts offer four distinct ways.
+The scripts offer 4 ways of selecting the objects to work with.
 
 Direct selection
 ^^^^^^^^^^^^^^^^
-The first is to simply select the all the desired objects. Opening the script \
+Simply select the all the desired objects. Opening the script \
 after selecting the object will prefill the script parameters with the right \
 object type and IDs:
 
@@ -44,7 +44,7 @@ For the direct selection, leave the Target Data Type as "*<selected>*" \
 Children selection
 ^^^^^^^^^^^^^^^^^^
 Instead of selecting the objects one by one, we can select the parent object \
-and set the "*Target Data Type*" to the type of the children objects \
+and indicate in the "*Target Data Type*" the children objects \
 we want to select.
 
 .. figure:: images/annotation_02_selecting_parentchild_autofill.png
@@ -52,15 +52,14 @@ we want to select.
    *Selection of all the images of a project and the auto-filled Export to CSV script.*
 ..
 
-In this example, we would select all the **Images** found under the **Project:701**.
+In this example, all the **Images** found under the **Project:701** are selected.
 
 Tag selection
 ^^^^^^^^^^^^^
-The third option is to select from a tag all the objects of a given type \
-(do not confiuse with the option of exporting tags). This grants additional  \
-flexibility, either to select objects attached to different projects \
-or different owners, or to have a finer control over \
-which objects to process.
+You can use the Tags to select the images or other objects you want to work with.  \ 
+Do not confiuse this option with the exporting of tags also provided by the scripts. The usage of tags  \
+for object selection grants additional flexibility. You can for example select objects \
+attached to different projects or belonging to different owners. \
 
 .. figure:: images/annotation_03_selecting_tags.png
 
@@ -94,7 +93,7 @@ expected by the import .csv script. This has two use:
    *Exported .csv with only the object ID and name*
 ..
 
-  Tip: If you have Key-Value pairs attached to your objects that you do not \
+  Tip: To omit some Key-Value pairs during export \
   wish to export (to create a template like shown above), specify a not-in-use \
   namespace (any random input will work). This does not affect tags.
 
@@ -126,9 +125,9 @@ There are many parameters here that could help you fine tune the way to import a
   on that in the :doc:`parameter description section</parameter_description>` of this guide.
 
 
-We can then see in the OMERO activities that the Key-Value pairs were added to 5 \
+The Key-Value pairs were added to 5 \
 datasets out of the 11 present in this project (as expected). We also see three set of \
-key-value pairs, one for each namespace we used in the csv.
+Key-Value pairs, one for each namespace we used in the csv.
 
 .. figure:: images/annotation_07_KV_import_printout.png
 
