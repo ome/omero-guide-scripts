@@ -132,10 +132,9 @@ We also obtain three sets of Key-Value pairs, one for each namespace used in the
 Converting the Key-Value pairs namespace
 ----------------------------------------
 
-Key-Value pairs are assigned a category/label (known as namespace). \
-This grants flexibility so that different annotations can be \
-distinguished or isolated (like for exporting/deleting only those with a given \
-namespace).
+Key-Value pairs are grouped under categories called namespaces. This allows \
+flexibility to distinguish or isolate annotations, such as exporting or deleting \
+only those associated with a specific namespace.
 
    In fact, if you created Key-Value pairs in OMERO.web, you have used \
    namespaces without noticing it: OMERO assigns by default the \
