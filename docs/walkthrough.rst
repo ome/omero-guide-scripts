@@ -56,7 +56,7 @@ In this example, all the **Images** found under the **Project:701** are selected
 
 Tag selection
 ^^^^^^^^^^^^^
-You can use the Tags to select the images or other objects you want to work with.  \ 
+You can use the Tags to select the images or other objects you want to work with.  \
 Do not confiuse this option with the exporting of tags also provided by the scripts. The usage of tags  \
 for object selection grants additional flexibility. You can for example select objects \
 attached to different projects or belonging to different owners. \
@@ -66,8 +66,8 @@ attached to different projects or belonging to different owners. \
    *Selection of a subset of datasets from a tag and the auto-filled Export to CSV script.*
 ..
 
-The selection works in the same way as for the children selection. Note \
-that choosing "*<selected>*" for "*Target Data Type*" will result in an \
+In this example, all the **Datasets** found under the **Tag:155390** are selected. \
+Note that choosing "*<selected>*" for "*Target Data Type*" will result in an \
 error in this case.
 
 All from selected
@@ -80,23 +80,18 @@ bellow. Note that this option does not exist for the import of annotation from c
 Exporting annotations
 ---------------------
 
-Exporting annotations will generate a .csv file with the header names \
-expected by the import .csv script. This has two use:
+Exporting annotations creates a .csv file with headers compatible with the import script. \
+It can be used for:
 
-* export existing key-value pairs (along other things like namespace or tags).
-  This can be useful to modify them before re-import, or to transfer annotations
-  across groups.
-* export a list of objects with their name and ID.
+* Export key-value pairs (along with data like namespaces and tags) for modification or \
+  transferring annotations between groups.
+* Export a list of objects with their names and IDs (and excluding key-value pairs by \
+  specifying an unused namespace).
 
 .. figure:: images/annotation_04_export_output.png
 
    *Exported .csv with only the object ID and name*
 ..
-
-  Tip: To omit some Key-Value pairs during export \
-  wish to export (to create a template like shown above), specify a not-in-use \
-  namespace (any random input will work). This does not affect tags.
-
 
 Importing annotations
 ---------------------
@@ -125,9 +120,8 @@ There are many parameters here that could help you fine tune the way to import a
   on that in the :doc:`parameter description section</parameter_description>` of this guide.
 
 
-The Key-Value pairs were added to 5 \
-datasets out of the 11 present in this project (as expected). We also see three set of \
-Key-Value pairs, one for each namespace we used in the csv.
+The Key-Value pairs were added to 5 datasets out of the 11 present in this project, as expected. \
+We also obtain three sets of Key-Value pairs, one for each namespace used in the csv.
 
 .. figure:: images/annotation_07_KV_import_printout.png
 
