@@ -5,10 +5,10 @@ Walkthrough
 The aim of the four Annotation scripts is to provide a way to edit \
 Key-Value pairs (MapAnnotations) and Tags (TagAnnotations) by batch:
 
-* Import Key-Value pairs and Tags as Annotations from a .csv file
-* Export Key-Value pairs and Tags to a .csv file
+* Import Key-Value pairs and Tags as Annotations from a CSV file
+* Export Key-Value pairs and Tags to a CSV file
 * Delete Key-Value pairs
-* Convert the namespaces of Key-Value pairs
+* Convert the Namespaces of Key-Value pairs
 
 This walkthrough should give you an understanding of \
 the scripts and help you to manage your annotations.
@@ -75,34 +75,34 @@ All from selected
 The fourth option is to apply the scripts to all of the selected objects and the children  \
 objects. Selecting a Project and using the option **<all (from selected)>** with result in \
 applying the scripts to the selected project, to the linked datasets and the linked images \
-bellow. Note that this option does not exist for the import of annotation from csv.
+bellow. Note that this option does not exist for the import of annotation from CSV.
 
 Exporting annotations
 ---------------------
 
-Exporting annotations creates a .csv file with headers compatible with the import script. \
+Exporting annotations creates a CSV file with headers compatible with the import script. \
 It can be used for:
 
-* Export Key-Value pairs (along with data like namespaces and Tags) for modification or \
+* Export Key-Value pairs (along with data like Namespaces and Tags) for modification or \
   transferring annotations between groups.
 * Export a list of objects with their names and IDs (and excluding Key-Value pairs by \
-  specifying an unused namespace).
+  specifying an unused Namespace).
 
 .. figure:: images/annotation_04_export_output.png
 
-   *Exported .csv with only the object ID and name*
+   *Exported CSV with only the object ID and name*
 ..
 
 Importing annotations
 ---------------------
 
 Starting from the file we exported as explained in the previous section, \
-we proceed to edit it within a spreadsheet editor, adding more columns to the csv, \
-You can also insert a row on the top of .csv to specify the namespace for each Key:
+we proceed to edit it within a spreadsheet editor, adding more columns to the CSV, \
+You can also insert a row on the top of CSV to specify the Namespace for each Key:
 
 .. figure:: images/annotation_05_KV_to_import.png
 
-   *Result of populating the csv shown in a text editor*
+   *Result of populating the CSV shown in a text editor*
 ..
 
 We added several columns to annotate our dataset with Key-Value pairs \
@@ -121,54 +121,54 @@ on that in the :doc:`parameter description section</parameter_description>` of t
 
 
 The Key-Value pairs were added to 5 datasets out of the 11 present in this project, as expected. \
-We also obtain three sets of Key-Value pairs, one for each namespace used in the csv.
+We also obtain three sets of Key-Value pairs, one for each Namespace used in the CSV.
 
 .. figure:: images/annotation_07_KV_import_printout.png
 
-  *The script output (5 entries in the csv matched to 5 dataset out of 11) and the\
+  *The script output (5 entries in the CSV matched to 5 dataset out of 11) and the\
   resulting Key-Value pairs annotation.*
 ..
 
-Converting the Key-Value pairs namespace
+Converting the Key-Value pairs Namespace
 ----------------------------------------
 
-Key-Value pairs are grouped under categories called namespaces. This allows \
+Key-Value pairs are grouped under categories called Namespaces. This allows \
 flexibility to distinguish or isolate annotations, such as exporting or deleting \
-only those associated with a specific namespace.
+only those associated with a specific Namespace.
 
 .. note::
    When you create Key-Value pairs in OMERO.web, you use \
-   namespaces without noticing it: OMERO assigns by default the \
+   Namespaces without noticing it: OMERO assigns by default the \
    "Client namespace" (``openmicroscopy.org/omero/client/mapAnnotation`` in full)\
-   , a special namespace recognized by OMERO.web.
+   , a special Namespace recognized by OMERO.web.
 
-The "Client namespace" (see note above) is the only namespace that allows editing of \
+The "Client namespace" (see note above) is the only Namespace that allows editing of \
 Key-Value pairs in the OMERO.web interface. If a Key-Value pair uses a different \
-namespace, its namespace must first be converted to the "Client namespace" before editing. \
-These annotation scripts will always default to the "Client namespace" if the namespace \
+Namespace, its Namespace must first be converted to the "Client namespace" before editing. \
+These annotation scripts will always default to the "Client namespace" if the Namespace \
 fields are left empty.
 
 .. figure:: images/annotation_08_convert_namespace.png
 
-  *The script to convert the namespace of Key-Value pairs annotations.*
+  *The script to convert the Namespace of Key-Value pairs annotations.*
 ..
 
-And here is our five Key-Value pairs annotations with converted namespace:
+And here is our five Key-Value pairs annotations with converted Namespace:
 
 .. figure:: images/annotation_09_converted_KV.png
 
-  *The script output (5 dataset had annotations with the default namespace) and the\
+  *The script output (5 dataset had annotations with the default Namespace) and the\
   resulting Key-Value pairs annotation.*
 ..
 
-Once the Key-Value pair has been converted to the "Client namespace," it can be edited \
+Once the Key-Value pair has been converted to the "Client Namespace," it can be edited \
 in the OMERO.web interface.
 
 Deleting Key-Value pairs
 ------------------------
 
 It turns out that there are more than a few edits to do on our Key-Value pairs, and \
-converting back and forth the namespace seems too tedious this time. Let's instead export \
+converting back and forth the Namespace seems too tedious this time. Let's instead export \
 what we have so far (we have done edits that we don't want to lose), delete "old" the Key-Value pairs, \
 and reimport when we are done fixing them.
 
@@ -176,8 +176,8 @@ Using the same selection inputs for both scripts, we make sure that we have the 
 computer before deleting them.
 
 .. warning::
-   To export or delete multiple namespaces simultaneously, you can use the * wildcard to include \
-   all Key-Value pairs, regardless of their namespaces. However, use this feature with caution, \
+   To export or delete multiple Namespaces simultaneously, you can use the * wildcard to include \
+   all Key-Value pairs, regardless of their Namespaces. However, use this feature with caution, \
    as deleted annotations cannot be recovered without a backup.
 
 Because there is no undo with the deletion of data from OMERO, think twice while checking the confirmation box and clicking \
@@ -189,7 +189,7 @@ the "Run script" button.
   before removing them from the server with the Remove KV script.*
 ..
 
-We can now make the necessary edits in the .csv file and reupload the Key-Value \
+We can now make the necessary edits in the CSV file and reupload the Key-Value \
 pairs!.
 
 Make sure to check the :doc:`extended guide </extended_description>` to learn about what else you can \

@@ -41,7 +41,7 @@ to add the http/https protocol in front:
 ``https://your-omeroweb-adress.org/webclient``
 
 This will allow the script to return a link for the created CSV for a direct \
-downloading. If not configured, the .csv can be found as an attachment of the \
+downloading. If not configured, the CSV can be found as an attachment of the \
 first parent object passed in parameter of the export script (the file is \
 attached regardless of whether the URL is set or not).
 

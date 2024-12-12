@@ -21,7 +21,7 @@ Features of KeyVal_from_csv
 ---------------------------
 * Generation of Key-Value pairs
 * Automatic Generation of multiple Key-Value pairs with the same Key if multiple Values are separated by a defined character
-* Assignement of namespaces from the csv file (or one for all Key-Value pairs from the script parameter).
+* Assignement of Namespaces from the CSV file (or one for all Key-Value pairs from the script parameter).
 * Automatic exclusion of Key-Value pairs with empty Values
 * Generation of Tags
    * Supports Tag Sets
@@ -31,7 +31,7 @@ Features of KeyVal_from_csv
 
 Exclude empty values from import
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-If you utilise a .csv with empty Values like
+If you utilise a CSV with empty Values like
 
 .. csv-table::
    :header: "name", "id", "manual analysis", "observation"
@@ -68,14 +68,14 @@ Be aware, that for the Image *C.jpg* two Key-Value pairs ``key_1 : value_1`` and
 
 Namespaces
 ^^^^^^^^^^
-The default namespace for OMERO Key-Value pairs generated in the web-interface and by our script is ``openmicroscopy.org/omero/client/mapAnnotation``.
-Only Key-Value pairs with this namespace can be edited in the web-interface later!
+The default Namespace for OMERO Key-Value pairs generated in the web-interface and by our script is ``openmicroscopy.org/omero/client/mapAnnotation``.
+Only Key-Value pairs with this Namespace can be edited in the web-interface later!
 
-Leaving the "*Namespace*" parameter blank will assign the default namespace to the new Key-Value pairs created, or \
+Leaving the "*Namespace*" parameter blank will assign the default Namespace to the new Key-Value pairs created, or \
 
-Additionally, you can choose to use custom namespaces, e.g. to utilize the `OMERO-Mapr <https://github.com/ome/omero-mapr>`_ functionalities, for each different Key.
-To do so just add a first row in the .csv with the first column containing "*namespace*". The corresponding namespace for each Key is then put above the respective Key. \
-If no namespace is given, the script will fall back to the default namespace.
+Additionally, you can choose to use custom Namespaces, e.g. to utilize the `OMERO-Mapr <https://github.com/ome/omero-mapr>`_ functionalities, for each different Key.
+To do so just add a first row in the CSV with the first column containing "*namespace*". The corresponding Namespace for each Key is then put above the respective Key. \
+If no Namespace is given, the script will fall back to the default Namespace.
 
 +-------------+------------+-----------+------------------------+
 | namespace   |            | Custom_NS |REMBI_Biosample         |
@@ -91,7 +91,7 @@ If no namespace is given, the script will fall back to the default namespace.
 
 Tags
 ^^^^
-Specified in dedicated columns in the csv, you can also annotate your objects with Tags by batch.
+Specified in dedicated columns in the CSV, you can also annotate your objects with Tags by batch.
 To do this simply put "*Tag*" where you would normally put the Key name. Multiple \
 Tags can be specified as a comma separated list (or by the input parameter "*Split value on*" if given).
 
@@ -99,7 +99,7 @@ If you want to select a Tag in a specific Tag-Set you just add the Tag-Set in sq
 brackets directly following the Tag. You can also specify the Tag by its Tag-Id in \
 square brackets directly following the Tag.
 By default the script will not create new Tags to avoid "Tag bloat", if you want new Tags created according \
-to the .csv Values you have to check the "*Create new Tags*" checkbox under "*Advanced parameters*".
+to the CSV Values you have to check the "*Create new Tags*" checkbox under "*Advanced parameters*".
 
 Furthermore, by default the script will search through all available Tags of the group, \
 if you want to use only your own Tags you have to check the "*Use only personal Tags*" checkbox \
@@ -116,7 +116,7 @@ under "*Advanced parameters*".
 
 Choosing the CSV separator
 --------------------------
-When importing annotations from a .csv file, the script tries by default \
+When importing annotations from a CSV file, the script tries by default \
 to detect the CSV separator automatically (one of ``,`` ``;`` ``TAB``).
 
 It is possible to specify directly which one is used (in the case the automatic \
@@ -125,7 +125,7 @@ commas or semi-column, it is recommended to use ``TAB`` as separators.
 
 Columns of parent names
 -----------------------
-To clarify the provenance of objects listed in the csv, you can choose to export \
+To clarify the provenance of objects listed in the CSV, you can choose to export \
 additional columns for the name of the parent objects.
 
 Those columns are by default excluded from the Key-Value pairs using the import \
@@ -134,7 +134,7 @@ containers: PROJECT, DATASET, SCREEN, PLATE, WELL and RUN)
 
 Default Namespace
 -----------------
-Leaving the namespace parameter to blank is the same as refering to \
+Leaving the Namespace parameter to blank is the same as refering to \
 the "Client namespace" (``openmicroscopy.org/omero/client/mapAnnotation``). The "Client namespace" \
 is used when a new Key-Value pair is created in OMERO.web user interface. \
 Only Key-Value pairs with this "Client namespace" are editable in OMERO.web user interface. \
@@ -150,7 +150,7 @@ you may specify those in the "*Target ID colname*" and "*Target name colname*" p
 of the import script.
 
 While OBJECT_NAME are only used to identify the objects when OBJECT_ID is not there, \
-it remains important to have it inside the .csv to recognize the objects more \
+it remains important to have it inside the CSV to recognize the objects more \
 easily inside a spreadsheet editors. A good use case for the OBJECT_NAME column is to transfer \
 annotations across groups (the IDs of the objects will differ between groups).
 
@@ -159,9 +159,9 @@ pairs, by the use of the following three parameters:
 
 .. image:: images/annotation_11_exclude_import.png
 
-* Target ID colname: the name of the column in the .csv that contains the
+* Target ID colname: the name of the column in the CSV that contains the
   objects IDs
-* Target name colname: the name of the column in the .csv that contains the
+* Target name colname: the name of the column in the CSV that contains the
   objects names
 * Columns to exclude: <ID> will exclude the column containing the objects IDs,
   <NAME> will do the same for the objects names, and additional columns can

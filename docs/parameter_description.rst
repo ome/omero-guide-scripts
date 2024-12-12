@@ -48,32 +48,32 @@ IDs of File Annotation already attached to the object can be used instead of "*C
 
 Namespace
 ---------
-In the case of Key-Value pairs import, the namespace assigned to the created Key-Value pairs.
+In the case of Key-Value pairs import, the Namespace assigned to the created Key-Value pairs.
 
-For the three other scripts, used to restrict the selection of Key-Value pairs to that namespace.
+For the three other scripts, used to restrict the selection of Key-Value pairs to that Namespace.
 
-When no namespace is provided, matches the namespace ``openmicroscopy.org/omero/client/mapAnnotation``, which \
-makes the Key-Value pairs editable in OMERO.web (the only namespace that allows that).
+When no Namespace is provided, matches the Namespace ``openmicroscopy.org/omero/client/mapAnnotation``, which \
+makes the Key-Value pairs editable in OMERO.web (the only Namespace that allows that).
 
-Multiple namespaces can be provided as a comma separated list.
+Multiple Namespaces can be provided as a comma separated list.
 
-All namespaces can be selected using the * character.
+All Namespaces can be selected using the * character.
 
 Old Namespace
 -------------
-For the namespace conversion script. List of old namespaces (comma separated) to convert to a different namespace (unique). \
+For the Namespace conversion script. List of old Namespaces (comma separated) to convert to a different Namespace (unique). \
 This can be used to group Key-Value pairs into a single annotation (all found Key-Value pairs will be grouped to a single\
 MapAnnotation ( = one block of Key-Value pairs).
 
 New Namespace
 -------------
-For the namespace conversion script. The new namespace to assign to the Key-Value pairs found on the target \
+For the Namespace conversion script. The new Namespace to assign to the Key-Value pairs found on the target \
 object having the "*Old Namespace*".
 
 Create new and merge
 --------------------
-For the namespace conversion script. When checked, the script will create a single new annotation regrouping all the old \
-annotation it found, instead of only updating the namespace of each annotations. The same parameter can be given to \
+For the Namespace conversion script. When checked, the script will create a single new annotation regrouping all the old \
+annotation it found, instead of only updating the Namespace of each annotations. The same parameter can be given to \
 "*Old Namespace*" and "*New Namespace*" just to regroup the annotations.
 
 CSV separator
@@ -94,7 +94,7 @@ is exported. These columns are ignored by default by the import script (see "*Co
 
 Include namespace
 -----------------
-For the export script. Check the box if you want to include in the CSV the namespace \
+For the export script. Check the box if you want to include in the CSV the Namespace \
 associated to each Key as the first row of the document. (this output is understood by the import script).
 
 Include tags
