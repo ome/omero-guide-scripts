@@ -137,7 +137,7 @@ flexibility to distinguish or isolate annotations, such as exporting or deleting
 only those associated with a specific namespace.
 
 .. note::
-   In fact, if you created Key-Value pairs in OMERO.web, you have used \
+   When you create Key-Value pairs in OMERO.web, you use \
    namespaces without noticing it: OMERO assigns by default the \
    "Client namespace" (``openmicroscopy.org/omero/client/mapAnnotation`` in full)\
    , a special namespace recognized by OMERO.web.
