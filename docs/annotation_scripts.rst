@@ -2,7 +2,7 @@ Annotation scripts
 ==================
 
 This section describes how to use the annotation scripts, which \
-provide additional support for key-value pairs (and tags) to \
+provide additional support for Key-Value pairs (and Tags) to \
 import, export, delete or convert between namespaces by batch.
 
 .. toctree::

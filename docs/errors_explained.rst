@@ -16,14 +16,14 @@ group after opening a second tab for a different group.
 
 Cannot split cells with a character used as CSV separator
 ---------------------------------------------------------
-Multiple values per cell can be used, but the character to split them must be \
+Multiple Values per cell can be used, but the character to split them must be \
 different from the separator used by the csv.
 
 CSV rows lenght mismatch: Header has <X> items, while line <line number> has <Y>
 --------------------------------------------------------------------------------
 This error shows either that one of the csv row has a different number of item from the header, or that \
 something wrong happened with the parsing of the csv. (make sure that your csv separator is not a comma and that \
-you use also a comma to have multiple value per cells, like in the case of tags).
+you use also a comma to have multiple Value per cells, like in the case of Tags).
 
 Error while reading the csv, convert your file to utf-8 encoding'utf-8'
 -----------------------------------------------------------------------
@@ -38,8 +38,8 @@ inside your .csv as parameter of the script (instead of guessing).
 
 File annotation ID must be given when using Tag as source
 ---------------------------------------------------------
-Because files cannot be attached to tags, and thus cannot be searched \
-automatically when providing tags as source, you must provide a file as \
+Because files cannot be attached to Tags, and thus cannot be searched \
+automatically when providing Tags as source, you must provide a file as \
 input to the script.
 
 Neither the column for the objects name or the objects index were found
@@ -84,24 +84,24 @@ FileAnnotation ID and not the LinkAnnotation ID, as indicated in the image bello
 
 The tag ID:{TAG_ID} is not in the permitted selection of tags
 -------------------------------------------------------------
-This error either means that the given ID for the tag is wrong, or that the ID \
-corresponds to a tag in a different group or belonging to a different user (and \
+This error either means that the given ID for the Tag is wrong, or that the ID \
+corresponds to a Tag in a different group or belonging to a different user (and \
 option 'Use only personal tags' is unchecked). Another possibility is that you have \
-a tagset with a name made of numbers only, and thus is interpreted as a tag ID.
+a Tagset with a name made of numbers only, and thus is interpreted as a Tag ID.
 
 The tag {TAG_NAME} doesn't correspond to the tag on the server with ID:{TAG_ID}
 -------------------------------------------------------------------------------
-This error tells you that the tag found from the given ID has a name different \
-from the one you used in the csv. This is to prevent you from using the wrong tag.
+This error tells you that the Tag found from the given ID has a name different \
+from the one you used in the csv. This is to prevent you from using the wrong Tag.
 
 The tag '{TAG_NAME}' does not exist while creation of new tags is not permitted
 -------------------------------------------------------------------------------
-If your tags do not exist yet (or if you only use your own tag), remember to \
-check the box 'Create new tags' if you wish to generate the tags automatically.
+If your Tags do not exist yet (or if you only use your own Tag), remember to \
+check the box 'Create new tags' if you wish to generate the Tags automatically.
 
 The tag '{TAG_NAME}' in TagSet '{TAG_SET}' does not exist while creation of new tags is not permitted
 -----------------------------------------------------------------------------------------------------
-Same as the error above, but in the case a tagset is specified.
+Same as the error above, but in the case a Tagset is specified.
 
 The .csv contains duplicates {DUPL} which makes it impossible to correctly allocate the annotations
 ---------------------------------------------------------------------------------------------------

@@ -48,9 +48,9 @@ IDs of File Annotation already attached to the object can be used instead of "*C
 
 Namespace
 ---------
-In the case of key-value pairs import, the namespace assigned to the created key-value pairs.
+In the case of Key-Value pairs import, the namespace assigned to the created Key-Value pairs.
 
-For the three other scripts, used to restrict the selection of key-value pairs to that namespace.
+For the three other scripts, used to restrict the selection of Key-Value pairs to that namespace.
 
 When no namespace is provided, matches the namespace ``openmicroscopy.org/omero/client/mapAnnotation``, which \
 makes the Key-Value pairs editable in OMERO.web (the only namespace that allows that).
@@ -67,7 +67,7 @@ MapAnnotation ( = one block of Key-Value pairs).
 
 New Namespace
 -------------
-For the namespace conversion script. The new namespace to assign to the key-value pairs found on the target \
+For the namespace conversion script. The new namespace to assign to the Key-Value pairs found on the target \
 object having the "*Old Namespace*".
 
 Create new and merge
@@ -95,12 +95,12 @@ is exported. These columns are ignored by default by the import script (see "*Co
 Include namespace
 -----------------
 For the export script. Check the box if you want to include in the CSV the namespace \
-associated to each key as the first row of the document. (this output is understood by the import script).
+associated to each Key as the first row of the document. (this output is understood by the import script).
 
 Include tags
 ------------
-For the export script. Check the box if you want to include in the CSV a column for the tags \
-attached to the target objects. The tags are in the TAG[TAGSET] format if the tags are part of a tagset.
+For the export script. Check the box if you want to include in the CSV a column for the Tags \
+attached to the target objects. The Tags are in the TAG[TAGSET] format if the Tags are part of a Tagset.
 
 Split values on
 ---------------
@@ -111,7 +111,7 @@ Columns to exclude
 ------------------
 For the import script. If the columns specified here are found in the CSV, they will be ignored by the script.
 
-Three default special values are given. <ID> corresponds to the name of the column for the object IDs specified by the \
+Three default special Values are given. <ID> corresponds to the name of the column for the object IDs specified by the \
 parameter `Target ID colname`_. <NAME> corresponds to the name of the column for the object IDs specified by the \
 parameter `Target name colname`_. <PARENT> corresponds to all possible parent containers type exported when using the \
 parameter `Include parent container names`_.
@@ -129,7 +129,7 @@ OBJECT_NAME as used by the export script.
 
 Exclude empty values
 --------------------
-For the import script. Check this box if you wish to avoid creating an entry in the key-value \
+For the import script. Check this box if you wish to avoid creating an entry in the Key-Value \
 pairs when a cell in the CSV is empty.
 
 Attach CSV file
@@ -139,18 +139,18 @@ selection of targets.
 
 Import tags
 -----------
-For the import script. Disable if you wish to ignore the tag \
+For the import script. Disable if you wish to ignore the Tag \
 columns during the import of annotation.
 
 Only use personal tags
 ----------------------
-For the key-value pair import script. When tags are specified in the CSV (under a column named TAG), check this box \
-if you want to restrict the use of tags to tags owned by you.
+For the Key-Value pair import script. When Tags are specified in the CSV (under a column named TAG), check this box \
+if you want to restrict the use of Tags to Tags owned by you.
 
 Allow tag creation
 ------------------
-For the key-value pair import script. When tags are specified in the CSV (under a column named TAG), check this box \
-if you want to allow the creation of tags when they don't exist. This also applies to tagsets.
+For the Key-Value pair import script. When Tags are specified in the CSV (under a column named TAG), check this box \
+if you want to allow the creation of Tags when they don't exist. This also applies to Tagsets.
 
 :Authors:
     Tom Boissonnet

@@ -57,13 +57,13 @@ In this example, all the **Images** found under the **Project:701** are selected
 Tag selection
 ^^^^^^^^^^^^^
 You can use the Tags to select the images or other objects you want to work with.  \
-Do not confiuse this option with the exporting of tags also provided by the scripts. The usage of tags  \
+Do not confiuse this option with the exporting of Tags also provided by the scripts. The usage of Tags  \
 for object selection grants additional flexibility. You can for example select objects \
 attached to different projects or belonging to different owners. \
 
 .. figure:: images/annotation_03_selecting_tags.png
 
-   *Selection of a subset of datasets from a tag and the auto-filled Export to CSV script.*
+   *Selection of a subset of datasets from a Tag and the auto-filled Export to CSV script.*
 ..
 
 In this example, all the **Datasets** found under the **Tag:155390** are selected. \
@@ -83,9 +83,9 @@ Exporting annotations
 Exporting annotations creates a .csv file with headers compatible with the import script. \
 It can be used for:
 
-* Export key-value pairs (along with data like namespaces and tags) for modification or \
+* Export Key-Value pairs (along with data like namespaces and Tags) for modification or \
   transferring annotations between groups.
-* Export a list of objects with their names and IDs (and excluding key-value pairs by \
+* Export a list of objects with their names and IDs (and excluding Key-Value pairs by \
   specifying an unused namespace).
 
 .. figure:: images/annotation_04_export_output.png
@@ -98,7 +98,7 @@ Importing annotations
 
 Starting from the file we exported as explained in the previous section, \
 we proceed to edit it within a spreadsheet editor, adding more columns to the csv, \
-You can also insert a row on the top of .csv to specify the namespace for each key:
+You can also insert a row on the top of .csv to specify the namespace for each Key:
 
 .. figure:: images/annotation_05_KV_to_import.png
 
@@ -126,7 +126,7 @@ We also obtain three sets of Key-Value pairs, one for each namespace used in the
 .. figure:: images/annotation_07_KV_import_printout.png
 
   *The script output (5 entries in the csv matched to 5 dataset out of 11) and the\
-  resulting key-value pairs annotation.*
+  resulting Key-Value pairs annotation.*
 ..
 
 Converting the Key-Value pairs namespace
@@ -150,7 +150,7 @@ fields are left empty.
 
 .. figure:: images/annotation_08_convert_namespace.png
 
-  *The script to convert the namespace of key-value pairs annotations.*
+  *The script to convert the namespace of Key-Value pairs annotations.*
 ..
 
 And here is our five Key-Value pairs annotations with converted namespace:
@@ -158,7 +158,7 @@ And here is our five Key-Value pairs annotations with converted namespace:
 .. figure:: images/annotation_09_converted_KV.png
 
   *The script output (5 dataset had annotations with the default namespace) and the\
-  resulting key-value pairs annotation.*
+  resulting Key-Value pairs annotation.*
 ..
 
 Once the Key-Value pair has been converted to the "Client namespace," it can be edited \
@@ -167,12 +167,12 @@ in the OMERO.web interface.
 Deleting Key-Value pairs
 ------------------------
 
-It turns out that there are more than a few edits to do on our key-value pairs, and \
+It turns out that there are more than a few edits to do on our Key-Value pairs, and \
 converting back and forth the namespace seems too tedious this time. Let's instead export \
-what we have so far (we have done edits that we don't want to lose), delete "old" the key-value pairs, \
+what we have so far (we have done edits that we don't want to lose), delete "old" the Key-Value pairs, \
 and reimport when we are done fixing them.
 
-Using the same selection inputs for both scripts, we make sure that we have the key-value pairs on our \
+Using the same selection inputs for both scripts, we make sure that we have the Key-Value pairs on our \
 computer before deleting them.
 
 .. warning::

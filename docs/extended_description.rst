@@ -31,7 +31,7 @@ Features of KeyVal_from_csv
 
 Exclude empty values from import
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-If you utilise a .csv with empty values like
+If you utilise a .csv with empty Values like
 
 .. csv-table::
    :header: "name", "id", "manual analysis", "observation"
@@ -42,17 +42,17 @@ If you utilise a .csv with empty values like
    "C.jpg","122","","missing"
 
 by default, the empty cells are skipped during Key-Value pairs creation.
-If you wish to create a key for empty cells, you can uncheck the box "*Exclude empty values*"
+If you wish to create a Key for empty cells, you can uncheck the box "*Exclude empty values*"
 
-This might be useful if you plan to fill it in manually later on. If you used an empty key value pair as a title \
-of a "key-value pair section", consider instead to assign a namesapce to your key-value pair subsets.
+This might be useful if you plan to fill it in manually later on. If you used an empty Key-Value pair as a title \
+of a "Key-Value pair section", consider instead to assign a namesapce to your Key-Value pair subsets.
 
 Multiple Values per Key
 ^^^^^^^^^^^^^^^^^^^^^^^
 If you utilise the Advanced parameter "*Split value on*" you can specify one character \
-for which multiple values get split. E.g. setting this to "!" in the following example, \
+for which multiple Values get split. E.g. setting this to "!" in the following example, \
 it would lead to the creation of two Key-Value pairs ``key_1 : value_1`` and ``key_1 : value_2`` \
-for the Image *A.jpg*. Despite looking like a list of multiple values for Image *B.tif* it \
+for the Image *A.jpg*. Despite looking like a list of multiple Values for Image *B.tif* it \
 would generate one Key-Value pair ``key_1 : value_1, value_2`` as the comma is not used \
 in our example as a separator for multiple Key-Value pairs.
 
@@ -71,10 +71,10 @@ Namespaces
 The default namespace for OMERO Key-Value pairs generated in the web-interface and by our script is ``openmicroscopy.org/omero/client/mapAnnotation``.
 Only Key-Value pairs with this namespace can be edited in the web-interface later!
 
-Leaving the "*Namespace*" parameter blank will assign the default namespace to the new key-value pairs created, or \
+Leaving the "*Namespace*" parameter blank will assign the default namespace to the new Key-Value pairs created, or \
 
 Additionally, you can choose to use custom namespaces, e.g. to utilize the `OMERO-Mapr <https://github.com/ome/omero-mapr>`_ functionalities, for each different Key.
-To do so just add a first row in the .csv with the first column containing "*namespace*". The corresponding namespace for each key is then put above the respective key. \
+To do so just add a first row in the .csv with the first column containing "*namespace*". The corresponding namespace for each Key is then put above the respective Key. \
 If no namespace is given, the script will fall back to the default namespace.
 
 +-------------+------------+-----------+------------------------+
@@ -91,15 +91,15 @@ If no namespace is given, the script will fall back to the default namespace.
 
 Tags
 ^^^^
-Specified in dedicated columns in the csv, you can also annotate your objects with tags by batch.
-To do this simply put "*tag*" where you would normally put the Key name. Multiple \
+Specified in dedicated columns in the csv, you can also annotate your objects with Tags by batch.
+To do this simply put "*Tag*" where you would normally put the Key name. Multiple \
 Tags can be specified as a comma separated list (or by the input parameter "*Split value on*" if given).
 
 If you want to select a Tag in a specific Tag-Set you just add the Tag-Set in square \
 brackets directly following the Tag. You can also specify the Tag by its Tag-Id in \
 square brackets directly following the Tag.
 By default the script will not create new Tags to avoid "Tag bloat", if you want new Tags created according \
-to the .csv values you have to check the "*Create new Tags*" checkbox under "*Advanced parameters*".
+to the .csv Values you have to check the "*Create new Tags*" checkbox under "*Advanced parameters*".
 
 Furthermore, by default the script will search through all available Tags of the group, \
 if you want to use only your own Tags you have to check the "*Use only personal Tags*" checkbox \
@@ -128,8 +128,8 @@ Columns of parent names
 To clarify the provenance of objects listed in the csv, you can choose to export \
 additional columns for the name of the parent objects.
 
-Those columns are by default excluded from the Key-value pairs using the import \
-script (<PARENT> value of the "Columns to exclude" parameter matches all parent \
+Those columns are by default excluded from the Key-Value pairs using the import \
+script (<PARENT> Value of the "Columns to exclude" parameter matches all parent \
 containers: PROJECT, DATASET, SCREEN, PLATE, WELL and RUN)
 
 Default Namespace

@@ -13,7 +13,7 @@ for more information.
 
 Installing the scripts
 ----------------------
-The Key-value pairs scripts have been updated in 2023 to enable \
+The Key-Value pairs scripts have been updated in 2023 to enable \
 them to annotate all the common object types in OMERO:
 
 * Image
