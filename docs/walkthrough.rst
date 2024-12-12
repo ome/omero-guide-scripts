@@ -142,10 +142,10 @@ only those associated with a specific namespace.
    "Client namespace" (``openmicroscopy.org/omero/client/mapAnnotation`` in full)\
    , a special namespace recognized by OMERO.web.
 
-The "client namespace" (see note above) is the only namespace that allows editing of \
+The "Client namespace" (see note above) is the only namespace that allows editing of \
 Key-Value pairs in the OMERO.web interface. If a Key-Value pair uses a different \
-namespace, its namespace must first be converted to the client namespace before editing. \
-These annotation scripts will always default to the "client namespace" if the namespace \
+namespace, its namespace must first be converted to the "Client namespace" before editing. \
+These annotation scripts will always default to the "Client namespace" if the namespace \
 fields are left empty.
 
 .. figure:: images/annotation_08_convert_namespace.png
@@ -161,7 +161,7 @@ And here is our five Key-Value pairs annotations with converted namespace:
   resulting key-value pairs annotation.*
 ..
 
-Once the Key-Value pair has been converted to the "client namespace," it can be edited \
+Once the Key-Value pair has been converted to the "Client namespace," it can be edited \
 in the OMERO.web interface.
 
 Deleting Key-Value pairs
