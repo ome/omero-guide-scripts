@@ -117,7 +117,7 @@ We proceed and start the script "*Import from CSV*".
 ..
 
 There are many parameters here that could help you fine tune the way to import annotations. More \
-  on that in the :doc:`parameter description section</parameter_description>` of this guide.
+on that in the :doc:`parameter description section</parameter_description>` of this guide.
 
 
 The Key-Value pairs were added to 5 datasets out of the 11 present in this project, as expected. \
@@ -136,14 +136,17 @@ Key-Value pairs are grouped under categories called namespaces. This allows \
 flexibility to distinguish or isolate annotations, such as exporting or deleting \
 only those associated with a specific namespace.
 
+.. note::
    In fact, if you created Key-Value pairs in OMERO.web, you have used \
    namespaces without noticing it: OMERO assigns by default the \
    "client namespace" (``openmicroscopy.org/omero/client/mapAnnotation`` in full)\
    , a special namespace recognized by OMERO.web allowing to edit them.
 
-We would like to do a few changes in OMERO.web, and for that we would need to \
-change the namespace to the default OMERO.web namespace. We indicate the namespace we \
-want to edit and leave the second field empty (default namespace is then used).
+The "client namespace" (see note above) is the only namespace that allows editing of \
+Key-Value pairs in the OMERO.web interface. If a Key-Value pair uses a different \
+namespace, its namespace must first be converted to the client namespace before editing. \
+These annotation scripts will always default to the "client namespace" if the namespace \
+fields are left empty.
 
 .. figure:: images/annotation_08_convert_namespace.png
 
@@ -167,8 +170,12 @@ what we have so far (we have done edits that we don't want to lose), delete "old
 and reimport when we are done fixing them.
 
 Using the same selection inputs for both scripts, we make sure that we have the key-value pairs on our \
-computer before deleting them. Because we want to export/delete multiple namespace at once, we can use the ``*`` \
-to include all namespace.
+computer before deleting them.
+
+.. warning::
+   To export or delete multiple namespaces simultaneously, you can use the * wildcard to include \
+   all Key-Value pairs, regardless of their namespaces. However, use this feature with caution, \
+   as deleted annotations cannot be recovered without a backup.
 
 Because there is no undo with the deletion of data from OMERO, think twice while checking the confirmation box and clicking \
 the "Run script" button.
