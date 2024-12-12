@@ -98,7 +98,7 @@ Importing annotations
 
 Starting from the file we exported as explained in the previous section, \
 we proceed to edit it within a spreadsheet editor, adding more columns to the csv, \
-including a row specifying the namespace to assign for each key:
+You can also insert a row on the top of .csv to specify the namespace for each key:
 
 .. figure:: images/annotation_05_KV_to_import.png
 
@@ -179,7 +179,7 @@ the "Run script" button.
   before removing them from the server with the Remove KV script.*
 ..
 
-We can now edit the mistakes in the .csv file and reupload the Key-Value \
+We can now make the necessary edits in the .csv file and reupload the Key-Value \
 pairs!.
 
 Make sure to check the :doc:`extended guide </extended_description>` to learn about what else you can \
