@@ -25,9 +25,9 @@ Target Data Type
 ----------------
 The data type to be selected for processing by the script. Default to "*<selected>*" means that the \
 objects specified by "*Data Type*" and "*IDs*" are the ones to be processed. Otherwise, "*Target Data Type*" \
-must correspond to a child object of the selected type (Image are child of Dataset and Project, \
-Well are child of Screen and Plate, ...). The option "*<all (from selected)>*" is used to apply the script \
-on the selected object and its children (dataset and images in the case of a project selected).
+must correspond to a child object of the selected type (Image is child of Dataset and Project, \
+Well is child of Screen and Plate, ...). The option "*<all (from selected)>*" is used to apply the script \
+on the selected object and its children (Datasets and Images in the case of a Project selected).
 
 
 File Annotation
@@ -53,17 +53,17 @@ In the case of key-value pairs import, the namespace assigned to the created key
 For the three other scripts, used to restrict the selection of key-value pairs to that namespace.
 
 When no namespace is provided, matches the namespace ``openmicroscopy.org/omero/client/mapAnnotation``, which \
-makes the key-value pairs editable in OMERO.web (the only namespace that allows that).
+makes the Key-Value pairs editable in OMERO.web (the only namespace that allows that).
 
-Multiple namespace can be provided as a comma separated list.
+Multiple namespaces can be provided as a comma separated list.
 
-All namespace can be selected using the * character.
+All namespaces can be selected using the * character.
 
 Old Namespace
 -------------
-For the namespace conversion script. List of old namespace (comma separated) to convert to a different namespace (unique). \
-This can be used to group key-value pairs into a single annotations (all found key-value pairs will be grouped to a single\
-key-value pair).
+For the namespace conversion script. List of old namespaces (comma separated) to convert to a different namespace (unique). \
+This can be used to group Key-Value pairs into a single annotation (all found Key-Value pairs will be grouped to a single\
+MapAnnotation ( = one block of Key-Value pairs).
 
 New Namespace
 -------------
@@ -72,7 +72,7 @@ object having the "*Old Namespace*".
 
 Create new and merge
 --------------------
-For the namespace conversion script. When ticked, the script will create a single new annotation regrouping all the old \
+For the namespace conversion script. When checked, the script will create a single new annotation regrouping all the old \
 annotation it found, instead of only updating the namespace of each annotations. The same parameter can be given to \
 "*Old Namespace*" and "*New Namespace*" just to regroup the annotations.
 

@@ -139,8 +139,8 @@ only those associated with a specific namespace.
 .. note::
    In fact, if you created Key-Value pairs in OMERO.web, you have used \
    namespaces without noticing it: OMERO assigns by default the \
-   "client namespace" (``openmicroscopy.org/omero/client/mapAnnotation`` in full)\
-   , a special namespace recognized by OMERO.web allowing to edit them.
+   "Client namespace" (``openmicroscopy.org/omero/client/mapAnnotation`` in full)\
+   , a special namespace recognized by OMERO.web.
 
 The "client namespace" (see note above) is the only namespace that allows editing of \
 Key-Value pairs in the OMERO.web interface. If a Key-Value pair uses a different \

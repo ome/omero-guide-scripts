@@ -134,12 +134,10 @@ containers: PROJECT, DATASET, SCREEN, PLATE, WELL and RUN)
 
 Default Namespace
 -----------------
-Leaving the namespace parameter to blank always refers to the same namespace, \
-the "Client namespace", corresponding to the one given to new Key-Value pairs \
-created inside OMERO.web. This namespace \
-(``openmicroscopy.org/omero/client/mapAnnotation`` in full) is treated \
-differently by OMERO.web as it is the only one that can be edited in its \
-interface.
+Leaving the namespace parameter to blank is the same as refering to \
+the "Client namespace" (``openmicroscopy.org/omero/client/mapAnnotation``). The "Client namespace" \
+is used when a new Key-Value pair is created in OMERO.web user interface. \
+Only Key-Value pairs with this "Client namespace" are editable in OMERO.web user interface. \
 
 Target ID, name and excluding column from Key-Value pairs
 ---------------------------------------------------------
