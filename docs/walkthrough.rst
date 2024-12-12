@@ -161,6 +161,9 @@ And here is our five Key-Value pairs annotations with converted namespace:
   resulting key-value pairs annotation.*
 ..
 
+Once the Key-Value pair has been converted to the "client namespace," it can be edited \
+in the OMERO.web interface.
+
 Deleting Key-Value pairs
 ------------------------
 
