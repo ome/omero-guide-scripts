@@ -92,17 +92,17 @@ for each objects the name of their parent containers.
 The possible parents are PROJECT, DATASET, SCREEN, PLATE, RUN, WELL, depending on which object type \
 is exported. These columns are ignored by default by the import script (see "*Columns to exclude*")
 
-Include namespace
+Include Namespace
 -----------------
 For the export script. Check the box if you want to include in the CSV the Namespace \
 associated to each Key as the first row of the document. (this output is understood by the import script).
 
-Include tags
+Include Tags
 ------------
 For the export script. Check the box if you want to include in the CSV a column for the Tags \
 attached to the target objects. The Tags are in the TAG[TAGSET] format if the Tags are part of a Tagset.
 
-Split values on
+Split Values on
 ---------------
 For the import script. The characters used to split the cells in the CSV into multiple entries. \
 The character used here must be different from the chosen CSV separator character.
@@ -127,7 +127,7 @@ For the import script. The name of the column in the CSV containing the objects 
 The names are used only to identify target objects if the ID column is not present. Defaults to \
 OBJECT_NAME as used by the export script.
 
-Exclude empty values
+Exclude empty Values
 --------------------
 For the import script. Check this box if you wish to avoid creating an entry in the Key-Value \
 pairs when a cell in the CSV is empty.
@@ -137,17 +137,17 @@ Attach CSV file
 For the import script. Check this box if you wish to attach the chosen CSV file to the object used for the \
 selection of targets.
 
-Import tags
+Import Tags
 -----------
 For the import script. Disable if you wish to ignore the Tag \
 columns during the import of annotation.
 
-Only use personal tags
+Only use personal Tags
 ----------------------
 For the Key-Value pair import script. When Tags are specified in the CSV (under a column named TAG), check this box \
 if you want to restrict the use of Tags to Tags owned by you.
 
-Allow tag creation
+Allow Tag creation
 ------------------
 For the Key-Value pair import script. When Tags are specified in the CSV (under a column named TAG), check this box \
 if you want to allow the creation of Tags when they don't exist. This also applies to Tagsets.

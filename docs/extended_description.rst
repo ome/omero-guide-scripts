@@ -29,7 +29,7 @@ Features of KeyVal_from_csv
    * Creation of new Tags and Tag Sets
    * Allows restriction to personal Tags only
 
-Exclude empty values from import
+Exclude empty Values from import
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 If you utilise a CSV with empty Values like
 
