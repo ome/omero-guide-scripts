@@ -1,8 +1,8 @@
-Server-side script
-==================
+Server-side scripts
+===================
 
 This section describes how to run, write and manage the OMERO server-side scripts.
-Server-side scripts can be written in different programming languages but you will 
+Server-side scripts can be written in different programming languages but you will
 need to invoke the scripts using a Python wrapper.
 
 Contents:
@@ -13,6 +13,8 @@ Contents:
    execute_scripts
    write_scripts
    manage_scripts
+   annotation_scripts
+
 
 Contribute
 ----------
